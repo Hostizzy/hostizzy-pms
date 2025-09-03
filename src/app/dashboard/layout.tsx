@@ -1,9 +1,9 @@
 import { Suspense } from 'react'
 import { redirect } from 'next/navigation'
-import { getServerSession, getUserProfile } from '@/lib/supabase'
-import { Sidebar } from '@/components/layout/sidebar'
-import { Header } from '@/components/layout/header'
-import { LoadingSpinner } from '@/components/ui/loading-spinner'
+import { getServerSession, getUserProfile } from '../../lib/supabase'
+import { Sidebar } from '../../components/layout/sidebar'
+import { Header } from '../../components/layout/header'
+import { LoadingSpinner } from '../../components/ui/loading-spinner'
 
 export default async function DashboardLayout({
   children,
